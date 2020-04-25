@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel"
-], function (Controller, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"sap/m/MessageBox"
+], function (Controller, JSONModel, MessageBox) {
 	"use strict";
 
 	return Controller.extend("FullScreenApp.controller.View1", {
@@ -41,10 +42,12 @@ sap.ui.define([
 				
 				var oBinding = this._oTable.getBinding("items");
 				oBinding.filter([]);
+				MessageBox.success("Tablo çağrıldı");
 				
 			}.bind(this);
 			mParameters.error = function (oError) {
 				debugger;
+				MessageBox.error("Hata alındı");
 			};
 			oModel.create(sPath, oData, mParameters);
 	}

@@ -64,8 +64,8 @@
 		"dependencies": {
 			"minUI5Version": "1.30.0",
 			"libs": {
-				"sap.ui.core": {},
 				"sap.m": {},
+				"sap.ui.core": {},
 				"sap.ui.layout": {}
 			}
 		},
@@ -86,8 +86,6 @@
 					"defaultOperationMode": "Server",
 					"defaultBindingMode": "OneWay",
 					"defaultCountMode": "Request"
-					
-					
 				},
 				"dataSource": "ZENT_UI_TEST_SRV"
 			}
@@ -117,5 +115,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/ztapp_fullsc/webapp",
+		"_version": "1.1.0"
 	}
 }
