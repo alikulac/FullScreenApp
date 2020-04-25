@@ -1,6 +1,7 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	controllerName="FullScreenApp.controller.View1">
 	<App id="idAppControl">
+		<!--//ALi-->
 		<pages>
 			<Page title="Satınalma Giriş Sayfası">
 				<content>
